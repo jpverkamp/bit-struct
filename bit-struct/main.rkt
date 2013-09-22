@@ -57,7 +57,6 @@
            (define-struct struct-name (name* ...) #:transparent)
            
            ; Create the builder function
-           ; TODO: finish this
            (define builder-name
              (make-keyword-procedure
               (λ (keys vals)
@@ -103,7 +102,6 @@
                 (name))))
            
            ; Create the ->bytes function
-           ; TODO: finish this
            (define (->bytes-name data-struct)
              (define data (struct->vector data-struct))
              (let loop ([bits '(bits* ...)]
