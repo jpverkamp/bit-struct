@@ -1,7 +1,7 @@
 #lang scribble/manual
 
-@(require scribble/eval bit-struct
-          (for-label racket
+@(require scribble/eval
+          (for-label racket bit-struct
                      images/flomap
                      racket/flonum))
 
