@@ -1,6 +1,6 @@
 #lang scribble/manual
 
-@(require scribble/eval
+@(require scribble/eval bit-struct
           (for-label racket
                      images/flomap
                      racket/flonum))
@@ -11,6 +11,8 @@
 This package extends standard Racket structs to make them more useful for
 bitfield type data, such as that used in packets over a network. It creates
 the normal accessors for structure along with defining three new methods:
+
+@defmodule[bit-struct]
 
 @itemlist[
   @item{@code{build-*} creates a structure via keyword parameters (defaulting to 0)}
@@ -24,7 +26,7 @@ the normal accessors for structure along with defining three new methods:
 
 @section{Installation}
 
-@commandline{raco pkg install github://github.com/jpverkamp/bit-struct/master}
+@commandline{raco pkg install git://github.com/jpverkamp/bit-struct}
 
 @section{Functions}
 
