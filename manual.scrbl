@@ -59,7 +59,7 @@ the normal accessors for structure along with defining three new methods:
 @section{Examples}
 
 @interaction[
-(require "bit-struct/main.rkt")
+(require bit-struct)
 
 (define-bit-struct dns
   ([id      16]
