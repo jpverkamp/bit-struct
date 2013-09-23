@@ -2,7 +2,7 @@
 
 (require (for-syntax racket/syntax))
 
-(provide define-bit-struct *->bytes bytes->* build-*)
+(provide define-bit-struct)
 
 ; Extract bits from a bit field
 (define (extract-bytes buffer from [to #f])
